@@ -13,7 +13,7 @@ document.querySelectorAll(".btn").forEach((button) => {
     if (value === "=") {
       //screen.value = eval(screen.value.replace(/÷/g, "/").replace(/X/g, "*"));
       
-      screen.value = "Kupal kaba boss? Magcode kana"
+      screen.value = "Iloveyouso much love mwa❤️😘"
     } else {
       screen.value += value;
     }

@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .buttons{
-  @apply w-20 h-20 bg-gray-500 text-4xl rounded-md border-4 border-gray-600;
+  @apply w-14 h-14 md:w-20 md:h-20 bg-gray-500 md:text-4xl rounded-md border-4 border-gray-600;
 }
