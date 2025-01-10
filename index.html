@@ -4,21 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    
-    <link rel="stylesheet" href="/public/style.css">
-    <style>
-  
 
-    </style>
+    <link rel="stylesheet" href="public/style.css" />
+    <style></style>
   </head>
   <body>
     <div
-      class="min-h-screen bg-[url(/img/bgImg.jpg)] bg-no-repeat bg-center bg-cover w-full flex justify-center items-center"
+      class="min-h-screen bg-[url(img/bgImg.jpg)] bg-no-repeat bg-center bg-cover w-full flex justify-center items-center"
     >
       <!--Start of content container-->
-      <div class="backdrop-blur-sm bg-black/30 mx-auto flex flex-col max-w-sm   text-white p-4 rounded-2xl">
+      <div
+        class="backdrop-blur-sm bg-black/30 mx-auto flex flex-col max-w-sm text-white p-4 rounded-2xl"
+      >
         <div class="my-5 overflow-hidden">
-          <input type="text" disabled  id="screen" class="text-end bg-transparent w-full h-24 text-2xl" />
+          <input
+            type="text"
+            disabled
+            id="screen"
+            class="text-end bg-transparent w-full h-24 text-2xl"
+          />
         </div>
         <div class="grid grid-cols-4 grid-auto-rows mx-auto gap-3">
           <button class="btn buttons" data-value="C">C</button>
@@ -37,7 +41,12 @@
           <button class="btn buttons" data-value="2">2</button>
           <button class="btn buttons" data-value="3">3</button>
           <button class="btn buttons" data-value="-">-</button>
-          <button class="btn bg-gray-500 text-4xl rounded-md border-4 border-gray-600 col-span-2" data-value="0">0</button>
+          <button
+            class="btn bg-gray-500 text-4xl rounded-md border-4 border-gray-600 col-span-2"
+            data-value="0"
+          >
+            0
+          </button>
           <button class="btn buttons" data-value=".">.</button>
           <button class="btn buttons" data-value="=">=</button>
         </div>
@@ -45,8 +54,6 @@
       <!--End of content Container-->
     </div>
 
-    <script src="index.js">
-     
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
