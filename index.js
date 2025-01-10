@@ -1,23 +1,19 @@
-const screen = document.getElementById('screen');
-      
-     
+const screen = document.getElementById("screen");
 
-document.querySelectorAll('.btn').forEach(button =>{
-  button.addEventListener('click',function(){
-    const value = button.getAttribute('data-value');
+document.querySelectorAll(".btn").forEach((button) => {
+  button.addEventListener("click", function () {
+    const value = button.getAttribute("data-value");
 
-    if(value === "C"){
+    if (value === "C") {
       screen.value = "";
       previous.value = "";
-    }else if(value === "DEL"){
+    } else if (value === "DEL") {
       screen.value = screen.value.slice(0, -1);
-    } if(value === "="){
-     
+    }
+    if (value === "=") {
       screen.value = eval(screen.value.replace(/÷/g, "/").replace(/X/g, "*"));
-    }
-    else{
+    } else {
       screen.value += value;
-     
     }
-  })
-})
+  });
+});
