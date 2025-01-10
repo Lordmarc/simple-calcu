@@ -6,13 +6,14 @@ document.querySelectorAll(".btn").forEach((button) => {
 
     if (value === "C") {
       screen.value = "";
-      previous.value = "";
+      
     } else if (value === "DEL") {
       screen.value = screen.value.slice(0, -1);
-    }
+    }else
     if (value === "=") {
-      //screen.value = eval(screen.value.replace(/÷/g, "/").replace(/X/g, "*"));
-      screen.value = "Kupal kaba boss? Magcode kana"
+      screen.value = eval(screen.value.replace(/÷/g, "/").replace(/X/g, "*"));
+      
+      //screen.value = "Kupal kaba boss? Magcode kana"
     } else {
       screen.value += value;
     }
