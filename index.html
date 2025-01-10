@@ -45,30 +45,8 @@
       <!--End of content Container-->
     </div>
 
-    <script>
-      const screen = document.getElementById('screen');
-      
+    <script src="index.js">
      
-
-      document.querySelectorAll('.btn').forEach(button =>{
-        button.addEventListener('click',function(){
-          const value = button.getAttribute('data-value');
-
-          if(value === "C"){
-            screen.value = "";
-            previous.value = "";
-          }else if(value === "DEL"){
-            screen.value = screen.value.slice(0, -1);
-          } if(value === "="){
-            screen.value = "Kupal kaba boss? Magcode kana inamo "
-            //screen.value = eval(screen.value.replace(/÷/g, "/").replace(/X/g, "*"));
-          }
-          else{
-            screen.value += value;
-           
-          }
-        })
-      })
     </script>
   </body>
 </html>
