@@ -11,9 +11,9 @@ document.querySelectorAll(".btn").forEach((button) => {
       screen.value = screen.value.slice(0, -1);
     }else
     if (value === "=") {
-      screen.value = eval(screen.value.replace(/÷/g, "/").replace(/X/g, "*"));
+      //screen.value = eval(screen.value.replace(/÷/g, "/").replace(/X/g, "*"));
       
-      //screen.value = "Kupal kaba boss? Magcode kana"
+      screen.value = "Kupal kaba boss? Magcode kana"
     } else {
       screen.value += value;
     }
