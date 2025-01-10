@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    
+    <link rel="stylesheet" href="./public/style.css">
+    <style>
+  
+
+    </style>
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-[url(/img/bgImg.jpg)] bg-no-repeat bg-center bg-cover w-full flex justify-center items-center"
+    >
+      <!--Start of content container-->
+      <div class="backdrop-blur-sm bg-black/30 mx-auto flex flex-col max-w-sm   text-white p-4 rounded-2xl">
+        <div class="my-5 overflow-hidden">
+          <input type="text" disabled  id="screen" class="text-end bg-transparent w-full h-24 text-2xl" />
+        </div>
+        <div class="grid grid-cols-4 grid-auto-rows mx-auto gap-3">
+          <button class="btn buttons" data-value="C">C</button>
+          <button class="btn buttons" data-value="DEL">DEL</button>
+          <button class="btn buttons" data-value="%">%</button>
+          <button class="btn buttons" data-value="÷">÷</button>
+          <button class="btn buttons" data-value="7">7</button>
+          <button class="btn buttons" data-value="8">8</button>
+          <button class="btn buttons" data-value="9">9</button>
+          <button class="btn buttons" data-value="X">X</button>
+          <button class="btn buttons" data-value="4">4</button>
+          <button class="btn buttons" data-value="5">5</button>
+          <button class="btn buttons" data-value="6">6</button>
+          <button class="btn buttons" data-value="+">+</button>
+          <button class="btn buttons" data-value="1">1</button>
+          <button class="btn buttons" data-value="2">2</button>
+          <button class="btn buttons" data-value="3">3</button>
+          <button class="btn buttons" data-value="-">-</button>
+          <button class="btn bg-gray-500 text-4xl rounded-md border-4 border-gray-600 col-span-2" data-value="0">0</button>
+          <button class="btn buttons" data-value=".">.</button>
+          <button class="btn buttons" data-value="=">=</button>
+        </div>
+      </div>
+      <!--End of content Container-->
+    </div>
+
+    <script>
+      const screen = document.getElementById('screen');
+      
+     
+
+      document.querySelectorAll('.btn').forEach(button =>{
+        button.addEventListener('click',function(){
+          const value = button.getAttribute('data-value');
+
+          if(value === "C"){
+            screen.value = "";
+            previous.value = "";
+          }else if(value === "DEL"){
+            screen.value = screen.value.slice(0, -1);
+          } if(value === "="){
+            screen.value = "Kupal kaba boss? Magcode kana inamo "
+            //screen.value = eval(screen.value.replace(/÷/g, "/").replace(/X/g, "*"));
+          }
+          else{
+            screen.value += value;
+           
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

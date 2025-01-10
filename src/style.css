@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buttons{
+  @apply w-20 h-20 bg-gray-500 text-4xl rounded-md border-4 border-gray-600;
+}
