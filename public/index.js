@@ -6,14 +6,10 @@ document.querySelectorAll(".btn").forEach((button) => {
 
     if (value === "C") {
       screen.value = "";
-      
     } else if (value === "DEL") {
       screen.value = screen.value.slice(0, -1);
-    }else
-    if (value === "=") {
-      //screen.value = eval(screen.value.replace(/÷/g, "/").replace(/X/g, "*"));
-      
-      screen.value = "Iloveyouso much love mwa❤️😘"
+    } else if (value === "=") {
+      screen.value = eval(screen.value.replace(/÷/g, "/").replace(/X/g, "*"));
     } else {
       screen.value += value;
     }
